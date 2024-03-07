@@ -1,7 +1,6 @@
 ---
 metadata:
   name: echo-a
-  namespace: cilium-demo
   labels:
     name: echo-a
     topology: any
@@ -59,7 +58,6 @@ kind: Deployment
 ---
 metadata:
   name: echo-b
-  namespace: cilium-demo
   labels:
     name: echo-b
     topology: any
@@ -118,7 +116,7 @@ kind: Deployment
 ---
 metadata:
   name: echo-b-host
-  namespace: cilium-demo
+  
   labels:
     name: echo-b-host
     topology: any
@@ -185,7 +183,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-a
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-a
     topology: any
@@ -243,7 +241,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-external-1111
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-external-1111
     topology: any
@@ -301,7 +299,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-a-denied-cnp
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-a-denied-cnp
     topology: any
@@ -349,7 +347,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-a-allowed-cnp
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-a-allowed-cnp
     topology: any
@@ -407,7 +405,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-external-fqdn-allow-google-cnp
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-external-fqdn-allow-google-cnp
     topology: any
@@ -465,7 +463,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-b-multi-node-clusterip
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-b-multi-node-clusterip
     topology: multi-node
@@ -533,7 +531,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-b-multi-node-headless
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-b-multi-node-headless
     topology: multi-node
@@ -601,7 +599,7 @@ kind: Deployment
 ---
 metadata:
   name: host-to-b-multi-node-clusterip
-  namespace: cilium-demo
+  
   labels:
     name: host-to-b-multi-node-clusterip
     topology: multi-node
@@ -670,7 +668,7 @@ kind: Deployment
 ---
 metadata:
   name: host-to-b-multi-node-headless
-  namespace: cilium-demo
+  
   labels:
     name: host-to-b-multi-node-headless
     topology: multi-node
@@ -739,7 +737,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-b-multi-node-nodeport
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-b-multi-node-nodeport
     topology: multi-node
@@ -807,7 +805,7 @@ kind: Deployment
 ---
 metadata:
   name: pod-to-b-intra-node-nodeport
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-b-intra-node-nodeport
     topology: intra-node
@@ -875,7 +873,7 @@ kind: Deployment
 ---
 metadata:
   name: echo-a
-  namespace: cilium-demo
+  
   labels:
     name: echo-a
     topology: any
@@ -895,7 +893,7 @@ kind: Service
 ---
 metadata:
   name: echo-b
-  namespace: cilium-demo
+  
   labels:
     name: echo-b
     topology: any
@@ -916,7 +914,7 @@ kind: Service
 ---
 metadata:
   name: echo-b-headless
-  namespace: cilium-demo
+  
   labels:
     name: echo-b-headless
     topology: any
@@ -937,7 +935,7 @@ kind: Service
 ---
 metadata:
   name: echo-b-host-headless
-  namespace: cilium-demo
+  
   labels:
     name: echo-b-host-headless
     topology: any
@@ -956,7 +954,7 @@ kind: Service
 ---
 metadata:
   name: pod-to-a-denied-cnp
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-a-denied-cnp
     topology: any
@@ -993,7 +991,7 @@ kind: CiliumNetworkPolicy
 ---
 metadata:
   name: pod-to-a-allowed-cnp
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-a-allowed-cnp
     topology: any
@@ -1037,7 +1035,7 @@ kind: CiliumNetworkPolicy
 ---
 metadata:
   name: pod-to-external-fqdn-allow-google-cnp
-  namespace: cilium-demo
+  
   labels:
     name: pod-to-external-fqdn-allow-google-cnp
     topology: any
